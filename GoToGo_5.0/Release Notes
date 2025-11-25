@@ -1,0 +1,21 @@
+ GoToGo 5.0 Sürüm Notları
+Yeni Özellikler ve İyileştirmeler
+( Bu Sürüm BETA Sürümü olup Deneysel Testler haricinde Kullanılmak için uygun değildir )
+
+-Gelişmiş Aydınlatma Kontrolü: Kullanıcıların far seçeneklerini manuel olarak ayarlamasına olanak tanıyan yeni bir ayar menüsü eklendi.
+-Esnek Sürüş Modu Seçimi: Farklı sürüş koşullarına uyum sağlamak için sürüş modu seçeneklerini yapılandırma ayarı entegre edildi.
+-Kart Okuyucu Stabilizasyonu: Kart okuyucu performansı önemli ölçüde iyileştirilerek daha güvenilir ve kesintisiz çalışması sağlandı.
+-Seri Port Veri İletimi: Bütün sistem verileri, seri port üzerinden standartlaştırılmış Veri Paketi formatında dışa aktarılacak şekilde yeniden düzenlendi. Bu, veri analizi ve entegrasyonu kolaylaştıracaktır.
+
+--ürüm Özeti (Mevcut Fonksiyonlar)
+-Sürüm 5.0'ın temel yetenekleri aşağıdaki gibidir:
+
+-Yetkilendirme Kontrolü: Kart okuma işlevi aktif olup, okunan kart verisi yetkili kart listesi ile başarılı bir şekilde karşılaştırılabilmektedir.
+-Modüler Çıkış Kontrolü: Sistem, farklı sürüş modları arasında geçiş yapabilmekte ve her moda uygun çıkış sinyallerini sağlayabilmektedir.
+-Aydınlatma Çıkış Kontrolü: Farklı far seçenekleri arasındaki geçişi yönetebilir ve bunlara ilişkin uygun çıkışları verebilir.
+-Kapsamlı Veri Çıkışı: Sistemdeki tüm operasyonel veriler (Kart durumu, Sürüş modu, Far ayarları vb.), Veri Paketi formatında seri port üzerinden sürekli olarak yazdırılmaktadır.
+
+--Eksik Bölümler
+-Otomatik Far Fonksiyonu: Çevresel koşullara duyarlı otomatik far açma/kapama fonksiyonu, bir sonraki sürüm için planlanmaktadır.
+
+--Yayın Tarihi: 25 Kasım 2025 Geliştirici: Ahmet Mert ÇELİK
