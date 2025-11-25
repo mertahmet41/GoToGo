@@ -1,0 +1,12 @@
+--GoToGo 4.0 Sürüm Notları
+--Temel Özellikler
+-Bu sürüm, GoToGo sisteminin temel kart okuma ve yetkilendirme altyapısını kurmaktadır.
+-Bu Sürüm Alpha Sürümü olması Nedeni İle kullanıma uygun değildir
+
+-Kartlı Yetkilendirme (NFC): Sistemin açılıp kapanması, tanımlanmış yetkili bir NFC kart ile sağlanmaktadır.
+-Temel Durum Yönetimi: Sistem, kart okumaya göre üç temel durumu yönetir:
+-AÇIK DURUM: Yetkili kart okunduğunda.
+-BEKLEME DURUMU: Kart okunduktan 5 saniye sonra, kart ortamdan uzaklaşsa bile bu duruma geçer.
+-KAPALI DURUM: Bekleme süresi (5 saniye) dolduktan sonra veya başlangıçta kart beklenirken.
+-Yetkisiz Kart Uyarısı: Tanımlı kart dışındaki bir kart okunduğunda kullanıcıya "Yetkisiz Kart!" uyarısı verilir.
+-Modül Hata Kontrolü: NFC modülünün başlangıçta doğru çalışıp çalışmadığı kontrol edilir; bir hata durumunda (1100 hatası) sistem tamamen durdurulur ve hata ledi yakılır.
