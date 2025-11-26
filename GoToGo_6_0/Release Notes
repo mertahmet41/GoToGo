@@ -9,8 +9,38 @@ Yenilikler
 4-Dörtü Flaşör Fonksiyonu eklendi
 5-Loop Döngüsüne ayarlanabilir Geciktirme getirildi
 
-Yarım Kalan Fonksiyonlar
--Yok
 
-Eklenicek fonksiyonlar
--??
+Kodun örnek Seri Çıktısı
+ÖRNEKLER:
+23:48:57.591 -> 0/2/0/1/1/1/1/1/0/    
+23:48:57.777 -> 1/2/0/2/1/0/0/0/0/                 ÖRNEK
+23:48:57.916 -> 1/2/0/2/1/1/1/0/0/
+23:48:58.101 -> 2/2/0/2/1/0/0/0/0/
+23:48:58.240 -> 2/2/0/2/1/1/1/0/0/
+23:48:58.379 -> 0/2/0/1/1/0/0/1/0/
+23:48:58.566 -> 0/2/0/1/1/1/1/1/0/
+23:48:58.706 -> 1/2/0/1/1/0/0/1/0/
+23:48:58.895 -> 1/2/0/1/1/1/1/1/0/
+23:48:59.034 -> 2/2/0/2/1/0/0/0/0/
+23:48:59.221 -> 2/2/0/2/1/1/1/0/0/
+23:48:59.362 -> 0/2/0/2/1/0/0/0/0/
+23:48:59.503 -> 0/2/0/2/1/1/1/0/0/
+23:48:59.688 -> 1/2/0/1/1/0/0/1/0/
+ÖRNEK
+
+(Butonların çoğu bağlı ardunioya olmadığından Rasgele sonuçlar alınmakdaır)
+
+Seri Port veri paketi çözümü Sırasıyla
+
+mode/far/durum/far2/vites/sinyallambasidata/dortu/sinyalsol/sinyalsag
+
+
+Yarım Kalan Fonksiyonlar
+- Vites Değişkeni Tepkimesi
+
+Daha Sonra Eklenicek fonksiyonlar
+-Ardunio ile Motorlara Gaz verme
+-AnlikTuketim 
+-Batarya
+-Motor hız
+-OrtamSicaklik
