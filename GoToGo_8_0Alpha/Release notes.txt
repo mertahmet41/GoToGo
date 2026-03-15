@@ -1,0 +1,34 @@
+GoToGo 8.0 Alpha - Güncelleme Notları
+Bu sürümde, 7.5 Alpha versiyonundaki temel işlevsellik korunarak; kod yapısı, okunabilirlik ve işlemci verimliliği üzerine odaklanılmıştır.
+
+Yapılan İyileştirmeler ve Değişiklikler
+Kod Mimarisi ve Organizasyon:
+
+Tüm değişkenler ve pin tanımlamaları; Sürüş Modları, Aydınlatma, Sinyal/Fren, Motor/EDS şeklinde kategorize edildi.
+
+Setup ve Loop içindeki karmaşa giderilerek, modüler bir yapıya geçildi.
+
+Mantıksal Optimizasyon (Boolean Logic):
+
+Durum değiştirme (toggle) işlemleri basitleştirildi. if-else blokları yerine NOT (!) operatörü kullanılarak işlemci yükü azaltıldı. (Örn: EDS = !EDS;)
+
+Hız Ölçüm ve Kesme (Interrupt) Revizyonu:
+
+Hız hesaplama formülleri sadeleştirildi. Kesme (interrupt) yönetimi içindeki veri tipleri daha stabil hale getirilerek ölçüm hassasiyeti artırıldı.
+
+Hata Yönetimi (Error Handling):
+
+SD Kart ve EEPROM erişimindeki hata kodları (1205, 1100 vb.) daha sistematik hale getirildi, sistemin hangi noktada hata verdiği kolayca anlaşılabilir kılındı.
+
+EDS (Elektronik Diferansiyel) Kararlılığı:
+
+Aktivasyon şartları ve açı hesaplamaları daha temiz bir matematiksel döngüye sokuldu. constrain ve map fonksiyonları ile PWM çıkışları daha güvenli hale getirildi.
+
+Debounce ve Zamanlama:
+
+Buton okumalarındaki parazitleri önleyen (debounce) süreleri optimize edildi.
+
+
+
+
+AhmetMertÇELİK 
