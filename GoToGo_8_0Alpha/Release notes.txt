@@ -20,6 +20,7 @@ Bi Sornraki Sürümde eklenicekler:
 
 1-Hoarlör için Amfi devresi
 2-G kuvvetini ölçen jroskop (ivme ölçer)
-3-Led kontorlü 
+3-Led kontorlü
+4-Yeni pil yönetimi için fonksiyonlar ve pil yönetiminin iyileştirilmesi
 
 AhmetMertÇELİK 
