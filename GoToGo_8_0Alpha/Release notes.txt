@@ -22,5 +22,16 @@ Bi Sornraki Sürümde eklenicekler:
 2-G kuvvetini ölçen jroskop (ivme ölçer)
 3-Led kontorlü
 4-Yeni pil yönetimi için fonksiyonlar ve pil yönetiminin iyileştirilmesi
+5-Gaz takılı Kalma Algılama
+7-Fren sw ye göre gaz kesme
+8-Watchdog timer
+9-Motor sürücü 12V düşürücü ve motorlar için sıcaklık sensörü
+10-Dağııtm panosu için ayarlanabilir fan
+11-Acceleration Smoothing (Spor Modda Kapanır)
+12-Batarya Yönetim kartı eklenerek anlık akım ve anlık voltaj izlenebilecek(4 adet güçlü mosfet birbirine paraler bağlanmıştır bu şekilde kulanılıcak)
+
+
+(Geliştirlme Aşamasında olduğundan pinler 0 olarak tanımlıdır bu şekilde kullanmayınız!)
+(Bu kod Ardunio Due ile Raspberry Pi nin birlikte çalışması için yapılmıştır)
 
 AhmetMertÇELİK 
