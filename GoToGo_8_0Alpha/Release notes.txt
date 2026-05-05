@@ -33,5 +33,9 @@ Bi Sornraki Sürümde eklenicekler:
 
 (Geliştirlme Aşamasında olduğundan pinler 0 olarak tanımlıdır bu şekilde kullanmayınız!)
 (Bu kod Ardunio Due ile Raspberry Pi nin birlikte çalışması için yapılmıştır)
+(--)
 
-AhmetMertÇELİK 
+--EV Control Unit   (Ardunio Due)
+
+AhmetMertÇELİK
+
