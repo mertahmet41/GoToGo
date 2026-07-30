@@ -1,0 +1,39 @@
+GoToGo 9.2 Alpha – Güncelleme Notları
+
+Gaz Kolu Okuma Yöntemi Değişti:
+
+Gaz kolunun potansiyometre değil, 3 kablolu (+/-/PWM sinyal) bir throttle olduğu anlaşıldı. analogRead() yerine artık kesme (interrupt) tabanlı PWM darbe genişliği ölçümü kullanılıyor.
+Sinyal kaybı (kablo kopması, bağlantı sorunu) artık ayrı bir arıza durumu olarak algılanıp gücü kesiyor.
+
+Gaz Sertliği / Tepki Eğrisi (Yeni):
+
+Güncel elektrikli araçlardaki gibi, sürüş moduna göre gaz pedalının hissi farklılaşıyor: ECO'da yumuşak/aşamalı, NORMAL'de doğrusal, SPORT'ta sert/agresif tepki. Üstel eğri (gazEgrisiUygula()) ile uygulanıyor.
+
+Jiroskop + İvmeölçer (MPU6050) Eklendi:
+
+Gerekli kütüphaneler: Adafruit MPU6050, Adafruit Unified Sensor, Adafruit BusIO (Kütüphane Yöneticisi'nden kurulmalı).
+Devrilme Koruması: Tehlikeli eğim açısı bir süre aşılırsa güç kesilir + dörtlü ikaz yanar.
+Çarpışma/Darbe Tespiti: Ani yüksek ivme (>2.5g) algılanırsa güç anında kesilir, dörtlü otomatik yanar; kontak kapatılıp açılana kadar kilitli kalır.
+Jiroskop Destekli Çekiş Kontrolü: Gerçek dönüş hızı (yaw rate) beklenenden fazlaysa (savrulma/kayma şüphesi) güç geçici azaltılır — basitleştirilmiş bir ESC/ESP (Elektronik Stabilite Kontrolü) mantığı.
+Tüm bu veriler (ivme X/Y/Z, yaw rate, roll/pitch açıları) artık Raspberry Pi'ye de binary pakette gönderiliyor.
+
+Kod Baştan Aşağı Düzenlendi:
+
+Tüm bölümler yeniden gruplandı (1-8), her satıra yakın açıklayıcı yorum eklendi, isimlendirme sadeleştirildi.
+8.0/8.1'deki tüm düzeltmeler korundu: PWM çözünürlüğü, sinyal lambası varsayılan durumu, debounce eksiklikleri, fren okuması, watchdog, APPS-fren plazibilite kontrolü, ivme yumuşatma, binary+CRC8 haberleşme.
+
+Bir Sonraki Sürümde Eklenecekler (güncel liste):
+
+Hoparlör için amfi devresi
+LED kontrolü
+Yeni pil yönetim fonksiyonları
+Motor sürücü 12V düşürücü ve motor sıcaklık sensörü
+Dağıtım panosu için ayarlanabilir fan
+Batarya yönetim kartı ile anlık akım/voltaj izleme (4 paralel MOSFET)
+(İleri aşama) Gerçek CAN-Bus hattına geçiş
+
+(Geliştirme aşamasında olduğundan bazı pinler 0 olarak tanımlıdır, bu şekilde kullanmayınız!)
+(Bu kod Arduino Due ile Raspberry Pi'nin birlikte çalışması için yazılmıştır)
+
+--EV Control Unit (Arduino Due)
+AhmetMertÇELİK
